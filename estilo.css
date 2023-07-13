@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+.receta__descripcion__titulo{
+    font-size: 24px;
+    font-weight: 700;
+}
+.receta__descripcion__detalles{
+    display: flex;
+    padding: 1rem 0;
+    gap: .7rem;
+}
+.receta__descripcion__detalles img{
+    height: min-content;
+    padding-top: .2rem;   
+}
+.receta__descripcion__portada{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 12px;
+}
+.receta__tiempo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.receta__tiempo>figure:nth-child(1){
+    width: 100vw;
+}
+.receta__tiempo__figura{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.receta__tiempo__figura__imagen{
+    width: 45px;
+}
+.receta__tiempo__figura__detalle{
+    font-size: 11px;
+}
+.receta__intruccion__contenido{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.receta__intruccion__contenido form fieldset{
+    border: none;
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    padding-left: .3rem;
+    padding-top: .3rem;
+}
+.checkbox[type=checkbox]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    transform: scale(1.7);
+}
+.receta_intruccion_numero{
+    min-width: 40px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F2994A;
+    border-radius: 6px;
+    color: #fff;
+}
+footer{
+    text-align: center;
+}
+@media (min-width:675px){
+    .contenedor{
+        /* padding: 3rem; */
+        align-items: center;
+    }
+    .receta{
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .receta_tamaño{
+        width: 50%;
+    }
+    .receta__tiempo{
+        position: absolute;
+        top: 80vh;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 20px 0 #fafafa;
+    }
+}
